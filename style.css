@@ -1,0 +1,82 @@
+/* .home-icons{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+*/
+
+
+body{
+    /*
+    background: linear-gradient(#e66465, #9198e5);
+    */
+    /*background: linear-gradient(#c33764, #1d2671);
+    */
+    background: linear-gradient(#ffd89b, #19547b);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Raleway,sans-serif;
+    text-align: center;
+}
+
+
+.home-main{
+    min-height: 100vh;
+    padding: 0 .5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url(https://avatars.githubusercontent.com/u/97485526?s=400&u=7807274039c992196a25881c6a4ee137d97fa008&v=4);
+    background-position: 50%;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+h1{
+    color: white;
+}
+h1:hover{
+    transition: 1s;
+    color: #ffd89b;
+}
+
+.subtitle::after{
+    content: '|';
+    animation: blink 0.7s infinite;
+    margin-left: 5px;
+    opacity: 1;
+}
+
+@keyframes blink{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.icon-white {
+    color: white;
+}
+
+.icon-white:hover{
+    transition: 1s;
+    color: #ffd89b;
+}
+
+.home-icons{
+    margin-top: 20px;
+}
+
+.icon{
+    padding: 10px;
+}
